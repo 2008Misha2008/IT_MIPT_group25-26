@@ -1,0 +1,17 @@
+s = input()
+n = len(s)
+a = []
+for i in range(n):
+    b = s[i:] + s[:i]
+    a.append(b)
+a.sort()
+c = -1
+for i in range(n):
+    if a[i] == s:
+        c = i + 1
+        break
+d = ""
+for e in a:
+    d += e[-1]
+print(c)
+print(d)
