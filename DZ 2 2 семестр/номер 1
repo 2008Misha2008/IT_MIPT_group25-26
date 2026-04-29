@@ -1,0 +1,14 @@
+n = int(input())
+for i in range(n):
+    input() 
+    s = input()
+    l = len(s)    
+    for k in range(1, l + 1):
+        if l % k == 0:
+            sr = s[:k]
+            c = l // k
+            if sr * c == s:
+                print(k)
+                if i < n - 1:
+                    print()
+                break
